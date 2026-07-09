@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Carlos Pérez - Director de Operaciones & Estrategia Comercial</title>
+    <title>Juan Carlos Pérez - Director de Operaciones, Construcción Ligera & Full Stack Dev</title>
     <style>
         :root {
             --primary: #FFCC00;
@@ -21,9 +21,31 @@
             width: 100%;
         }
 
-        header { background-color: var(--dark); color: white; padding: 40px 20px; text-align: center; }
-        header h1 { font-size: 2.5rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
-        header p { font-size: 1.2rem; margin-top: 10px; color: #E0E0E0; font-weight: 300; }
+        header { 
+            background-color: var(--dark); 
+            color: white; 
+            padding: 40px 20px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid var(--primary);
+            object-fit: cover;
+            background-color: #333;
+        }
+        .header-text { text-align: left; }
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            .header-text { text-align: center; }
+        }
+        header h1 { font-size: 2.3rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; margin-top: 5px; color: #E0E0E0; font-weight: 300; }
 
         .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
         
@@ -31,7 +53,7 @@
         @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
 
         section { background: white; padding: 25px; margin-bottom: 20px; border-radius: 4px; border-left: 5px solid var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        h2 { font-size: 1.4rem; color: var(--dark); text-transform: uppercase; margin-bottom: 15px; border-bottom: 2px solid var(--light); padding-bottom: 5px; }
+        h2 { font-size: 1.4rem; color: var(--dark); text-transform: uppercase; margin-bottom: 15px; border-bottom: 2px solid var(--light); padding-bottom: 5px; display: flex; align-items: center; gap: 10px; }
         
         .job { margin-bottom: 20px; }
         .job-title { font-weight: bold; color: var(--dark); font-size: 1.1rem; }
@@ -41,8 +63,8 @@
 
         .skills-badge { display: inline-block; background: var(--dark); color: white; padding: 5px 12px; margin: 4px; border-radius: 3px; font-size: 0.9rem; font-weight: 500; }
         .skills-badge.tech { background: var(--primary); color: var(--dark); }
+        .skills-badge.ai { background: #007BFF; color: white; }
 
-        /* Botón de Acción Industrial */
         .cta-btn { display: block; background: var(--primary); color: var(--dark); text-align: center; padding: 15px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.2s; }
         .cta-btn:hover { background: #E6B800; transform: translateY(-2px); }
     </style>
@@ -52,9 +74,13 @@
     <div class="industrial-bar"></div>
     
     <header>
-        <h1>Juan Carlos Pérez Martínez</h1>
-        <p>Director de Estrategia Comercial & Operaciones de Sucursal</p>
-        <div style="margin-top: 15px; font-size: 0.9rem; color: #AAA;">📍 Querétaro, Qro. | 📱 446 404 4521</div>
+        <!-- Foto enlazada desde tu almacenamiento en la nube -->
+        <img class="profile-photo" src="https://lh3.googleusercontent.com/d/1S6b_i7pX_o9oZ3M-z3ZofZbeSshP_pQx" alt="Juan Carlos Pérez">
+        <div class="header-text">
+            <h1>Juan Carlos Pérez Martínez</h1>
+            <p>Gerente de Operaciones, Construcción Ligera & Full Stack Developer</p>
+            <div style="margin-top: 10px; font-size: 0.9rem; color: #AAA;">📍 Col. Mercurio / Zonas Qro. | 📱 446 404 4521</div>
+        </div>
     </header>
 
     <div class="container">
@@ -62,30 +88,38 @@
             
             <div class="main-content">
                 <section>
-                    <h2>Perfil Profesional</h2>
-                    <p>Estratega comercial Senior y Administrador de Unidades de Negocio con amplia trayectoria en la región del Bajío. Experto en control operativo, gestión de inventarios, facturación, manejo de personal y sistemas ERP (SAP / Retail One). Cuenta con más de 10 años de experiencia especializada en la dirección de proyectos de infraestructura residencial y comercial (Rentología), coordinando de forma técnica la aplicación de sistemas prefabricados de construcción ligera (Tablaroca, Covitec, estructuras ligeras y paneles de unicel estructural). Su trasfondo en Artes Visuales le otorga una visión técnica avanzada para la lectura de planos, volumetría y asesoría premium a arquitectos, ingenieros y constructores.</p>
+                    <h2>Perfil Profesional Avanzado</h2>
+                    <p>Estratega Operativo Senior y Programador Full Stack especializado en la administración inteligente de sucursales comerciales e industriales. Cuento con más de 10 años de experiencia técnica directa en proyectos de construcción ligera y rentología, aplicando sistemas **Tablaroca, Covitec (estructural y sin estructura)** y perfiles metálicos. No soy un administrador tradicional: utilizo mi perfil tecnológico para desarrollar software a la medida e integrar arquitecturas de Inteligencia Artificial destinadas a predecir la demanda de inventario, optimizar las ventas y automatizar el entrenamiento del personal mediante simuladores de manejo de objeciones. Experto en control operativo (ERP SAP/Retail One), facturación y relaciones comerciales B2B de alto nivel.</p>
+                </section>
+
+                <section>
+                    <h2>Innovación Tecnológica Aplicada a Sucursal</h2>
+                    <ul class="job-bullets" style="margin-left: 20px; margin-bottom: 25px;">
+                        <li><strong>Predicción Inteligente de Inventario:</strong> Desarrollo de software predictivo con modelos algorítmicos para estimar picos de demanda en materiales de construcción, reduciendo mermas y garantizando stock crítico.</li>
+                        <li><strong>Sistemas Inmersivos de Venta:</strong> Creación de herramientas personalizadas para el entrenamiento comercial, optimizando el manejo de objeciones de mostrador y campo mediante simuladores interactivos de IA.</li>
+                        <li><strong>Automatización del Embudo Comercial:</strong> Integración de APIs comerciales que agilizan el seguimiento desde la cotización inicial en obra hasta la entrega final y el servicio postventa.</li>
+                    </ul>
                 </section>
 
                 <section>
                     <h2>Trayectoria Profesional</h2>
                     
                     <div class="job">
-                        <div class="job-title">Director de Rentología & Administración de Propiedades</div>
-                        <div class="job-meta">Consultoría & Desarrollo de Infraestructura Residencial | 10 Años de Experiencia</div>
+                        <div class="job-title">Director de Rentología, Infraestructura & Administración de Propiedades</div>
+                        <div class="job-meta">Desarrollo y Reconfiguración de Activos Inmobiliarios | 10 Años de Trayectoria</div>
                         <ul class="job-bullets">
-                            <li>Dirección operativa integral y administración de activos inmobiliarios bajo modelos de negocio de alta rentabilidad por seccionamiento de habitaciones.</li>
-                            <li>Coordinación técnica y supervisión directa de obras de remodelación y ampliación utilizando **sistemas prefabricados de construcción ligera (Tablaroca y sistema Covitec de Unicel con y sin estructura)**.</li>
-                            <li>Control y optimización de presupuestos, cubicación de materiales para obra ligera, y gestión de inventarios para proyectos constructivos de reconfiguración espacial.</li>
-                            <li>Liderazgo y supervisión de equipos de contratistas, instaladores y personal administrativo para asegurar los tiempos de entrega y el control de calidad en acabados.</li>
+                            <li>Dirección operativa y remodelación estructural de propiedades mediante modelos de alta rentabilidad por seccionamiento de habitaciones.</li>
+                            <li>Coordinación técnica y aplicación en campo de sistemas de construcción ligera (**Tablaroca y paneles de poliestireno estructural Covitec** con y sin estructura).</li>
+                            <li>Cubicación milimétrica de materiales, control de presupuestos, administración de almacenes de obra y gestión de proveedores de acabados.</li>
                         </ul>
                     </div>
 
                     <div class="job">
-                        <div class="job-title">Director de Estrategia Comercial & Desarrollo B2B</div>
-                        <div class="job-meta">Consultoría Independiente | 2024 – Presente</div>
+                        <div class="job-title">Director de Estrategia Comercial & Arquitecto de Software Full Stack</div>
+                        <div class="job-meta">Consultoría Independiente de Negocios y TI | 2024 – Presente</div>
                         <ul class="job-bullets">
-                            <li>Identificación de nichos de negocio y prospección inteligente de clientes clave (constructoras, arquitectos y desarrolladores inmobiliarios) en el Bajío.</li>
-                            <li>Estructuración de alianzas comerciales duraderas y diseño de estrategias de venta consultiva para insumos y acabados de gama media y alta.</li>
+                            <li>Desarrollo e implementación de plataformas web autoadministrables para automatizar la prospección inteligente B2B en la región del Bajío.</li>
+                            <li>Apertura de canales de venta directa con constructoras, contratistas y firmas de arquitectura para el suministro de materiales a gran escala.</li>
                         </ul>
                     </div>
                 </section>
@@ -93,20 +127,21 @@
 
             <div class="sidebar">
                 <section>
-                    <h2>Habilidades Clave</h2>
-                    <div class="skills-badge tech">Manejo de ERP (SAP)</div>
-                    <div class="skills-badge tech">Retail One / Facturación</div>
-                    <div class="skills-badge tech">Control de Inventarios</div>
+                    <h2>Habilidades de Impacto</h2>
+                    <div class="skills-badge tech">ERP (SAP / Retail One)</div>
+                    <div class="skills-badge ai">Predicción de Ventas (IA)</div>
+                    <div class="skills-badge ai">Manejo de Objeciones (Software)</div>
+                    <div class="skills-badge tech">Full Stack (HTML/CSS/JS)</div>
                     <div class="skills-badge">Sistemas Tablaroca</div>
-                    <div class="skills-badge">Estructuras Covitec</div>
+                    <div class="skills-badge">Paneles Covitec</div>
+                    <div class="skills-badge">Control de Inventarios</div>
                     <div class="skills-badge">Administración de Personal</div>
-                    <div class="skills-badge">Ventas de Mostrador</div>
-                    <div class="skills-badge">Lectura de Planos</div>
+                    <div class="skills-badge">Facturación y Cierre B2B</div>
                 </section>
 
                 <section>
-                    <h2>Educación</h2>
-                    <p><strong>Licenciatura en Artes Visuales</strong><br>Universidad de las Artes, Ags.<br><small>Especialización en volumetría espacial y balance estructural.</small></p>
+                    <h2>Formación Universitaria</h2>
+                    <p><strong>Licenciatura en Artes Visuales</strong><br>Universidad de las Artes, Ags.<br><small>Habilidad avanzada en interpretación de planos, modulación espacial, volumetría y acabados estéticos.</small></p>
                 </section>
 
                 <a href="https://wa.me/524464044521" class="cta-btn" target="_blank">Contactar por WhatsApp</a>
@@ -119,4 +154,3 @@
 
 </body>
 </html>
-
