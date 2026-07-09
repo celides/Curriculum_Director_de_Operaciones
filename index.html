@@ -65,8 +65,22 @@
         .skills-badge.tech { background: var(--primary); color: var(--dark); }
         .skills-badge.ai { background: #007BFF; color: white; }
 
-        .cta-btn { display: block; background: var(--primary); color: var(--dark); text-align: center; padding: 15px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.2s; }
+        /* Botones Laterales */
+        .cta-btn { display: block; background: var(--primary); color: var(--dark); text-align: center; padding: 15px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; margin-top: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.2s; border: none; width: 100%; cursor: pointer; font-size: 1rem; }
         .cta-btn:hover { background: #E6B800; transform: translateY(-2px); }
+        .download-btn { background: var(--dark); color: white; border: 2px solid var(--primary); }
+        .download-btn:hover { background: #333; color: var(--primary); }
+
+        /* 🖨️ ESTILOS EXCLUSIVOS PARA IMPRESIÓN / DESCARGA PDF */
+        @media print {
+            .industrial-bar, .no-print, .cta-btn { display: none !important; }
+            body { background-color: white; color: #000; }
+            .grid { display: block; }
+            section { border-left: 4px solid #000; box-shadow: none; page-break-inside: avoid; }
+            header { background-color: #111 !important; color: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            header h1 { color: var(--primary) !important; }
+            .skills-badge { border: 1px solid #000; color: #000 !important; background: transparent !important; }
+        }
     </style>
 </head>
 <body>
@@ -74,7 +88,6 @@
     <div class="industrial-bar"></div>
     
     <header>
-        <!-- Foto enlazada con tu link verificado de alta disponibilidad -->
         <img class="profile-photo" src="https://lh3.googleusercontent.com/d/1gHS6x13EpKdkXQGxYRc3QZWLYaDxD-qn" alt="Juan Carlos Pérez Martínez">
         <div class="header-text">
             <h1>Juan Carlos Pérez Martínez</h1>
@@ -106,6 +119,61 @@
                     
                     <div class="job">
                         <div class="job-title">Director de Rentología, Infraestructura & Administración de Propiedades</div>
+                        <div class="job-meta">Desarrollo y Reconfiguración de Activos Inmobiliarios | 10 Años de Trayectoria</div>
+                        <ul class="job-bullets">
+                            <li>Dirección operativa y remodelación estructural de propiedades mediante modelos de alta rentabilidad por seccionamiento de habitaciones.</li>
+                            <li>Coordinación técnica y aplicación en campo de sistemas de construcción ligera (**Tablaroca y paneles de poliestireno estructural Covitec** con y sin estructura).</li>
+                            <li>Cubicación milimétrica de materiales, control de presupuestos, administración de almacenes de obra y gestión de proveedores de acabados.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">Director de Estrategia Comercial & Arquitecto de Software Full Stack</div>
+                        <div class="job-meta">Consultoría Independiente de Negocios y TI | 2024 – Presente</div>
+                        <ul class="job-bullets">
+                            <li>Desarrollo e implementación de plataformas web autoadministrables para automatizar la prospección inteligente B2B en la región del Bajío.</li>
+                            <li>Apertura de canales de venta directa con constructoras, contratistas y firmas de arquitectura para el suministro de materiales a gran escala.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="sidebar">
+                <section class="no-print">
+                    <h2>Acciones Rápidas</h2>
+                    <!-- Función nativa de JS para generar el PDF de alta calidad -->
+                    <button onclick="window.print()" class="cta-btn download-btn">📥 Descargar CV en PDF</button>
+                    <a href="https://wa.me/524464044521" class="cta-btn" target="_blank">💬 Contactar por WhatsApp</a>
+                </section>
+
+                <section>
+                    <h2>Habilidades de Impacto</h2>
+                    <div class="skills-badge tech">ERP (SAP / Retail One)</div>
+                    <div class="skills-badge ai">Predicción de Ventas (IA)</div>
+                    <div class="skills-badge ai">Manejo de Objeciones (Software)</div>
+                    <div class="skills-badge tech">Full Stack (HTML/CSS/JS)</div>
+                    <div class="skills-badge">Sistemas Tablaroca</div>
+                    <div class="skills-badge">Paneles Covitec</div>
+                    <div class="skills-badge">Control de Inventarios</div>
+                    <div class="skills-badge">Administración de Personal</div>
+                    <div class="skills-badge">Facturación y Cierre B2B</div>
+                </section>
+
+                <section>
+                    <h2>Formación Universitaria</h2>
+                    <p><strong>Carrera de Programación:<br>Desarrollador Full Stack</strong><br>Mentors International<br><small>Especialización en ingeniería de software, arquitectura de sistemas comerciales y bases de datos autoadministrables.</small></p>
+                    <br>
+                    <p><strong>Licenciatura en Artes Visuales</strong><br>Universidad de las Artes, Ags.<br><small>Habilidad avanzada en interpretación de planos, modulación espacial, volumetría y acabados estéticos.</small></p>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="industrial-bar" style="margin-top: 50px;"></div>
+
+</body>
+</html>
                         <div class="job-meta">Desarrollo y Reconfiguración de Activos Inmobiliarios | 10 Años de Trayectoria</div>
                         <ul class="job-bullets">
                             <li>Dirección operativa y remodelación estructural de propiedades mediante modelos de alta rentabilidad por seccionamiento de habitaciones.</li>
