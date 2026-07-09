@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Carlos Pérez - Director de Operaciones & Estrategia Comercial</title>
+    <style>
+        :root {
+            --primary: #FFCC00;
+            --dark: #1A1A1A;
+            --light: #F5F5F5;
+            --text: #333333;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--text); line-height: 1.6; }
+        
+        /* Franja Industrial Amarilla y Negra */
+        .industrial-bar {
+            height: 15px;
+            background: repeating-linear-gradient(45deg, var(--primary), var(--primary) 10px, var(--dark) 10px, var(--dark) 20px);
+            width: 100%;
+        }
+
+        header { background-color: var(--dark); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; margin-top: 10px; color: #E0E0E0; font-weight: 300; }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        
+        .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+
+        section { background: white; padding: 25px; margin-bottom: 20px; border-radius: 4px; border-left: 5px solid var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        h2 { font-size: 1.4rem; color: var(--dark); text-transform: uppercase; margin-bottom: 15px; border-bottom: 2px solid var(--light); padding-bottom: 5px; }
+        
+        .job { margin-bottom: 20px; }
+        .job-title { font-weight: bold; color: var(--dark); font-size: 1.1rem; }
+        .job-meta { color: #777; font-size: 0.9rem; margin-bottom: 5px; }
+        .job-bullets { margin-left: 20px; }
+        .job-bullets li { margin-bottom: 5px; }
+
+        .skills-badge { display: inline-block; background: var(--dark); color: white; padding: 5px 12px; margin: 4px; border-radius: 3px; font-size: 0.9rem; font-weight: 500; }
+        .skills-badge.tech { background: var(--primary); color: var(--dark); }
+
+        /* Botón de Acción Industrial */
+        .cta-btn { display: block; background: var(--primary); color: var(--dark); text-align: center; padding: 15px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.2s; }
+        .cta-btn:hover { background: #E6B800; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+
+    <div class="industrial-bar"></div>
+    
+    <header>
+        <h1>Juan Carlos Pérez Martínez</h1>
+        <p>Director de Estrategia Comercial & Operaciones de Sucursal</p>
+        <div style="margin-top: 15px; font-size: 0.9rem; color: #AAA;">📍 Querétaro, Qro. | 📱 446 404 4521</div>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="main-content">
+                <section>
+                    <h2>Perfil Profesional</h2>
+                    <p>Estratega comercial Senior y Administrador de Unidades de Negocio con amplia trayectoria en la región del Bajío. Experto en control operativo, gestión de inventarios, facturación, manejo de personal y sistemas ERP (SAP / Retail One). Cuenta con más de 10 años de experiencia especializada en la dirección de proyectos de infraestructura residencial y comercial (Rentología), coordinando de forma técnica la aplicación de sistemas prefabricados de construcción ligera (Tablaroca, Covitec, estructuras ligeras y paneles de unicel estructural). Su trasfondo en Artes Visuales le otorga una visión técnica avanzada para la lectura de planos, volumetría y asesoría premium a arquitectos, ingenieros y constructores.</p>
+                </section>
+
+                <section>
+                    <h2>Trayectoria Profesional</h2>
+                    
+                    <div class="job">
+                        <div class="job-title">Director de Rentología & Administración de Propiedades</div>
+                        <div class="job-meta">Consultoría & Desarrollo de Infraestructura Residencial | 10 Años de Experiencia</div>
+                        <ul class="job-bullets">
+                            <li>Dirección operativa integral y administración de activos inmobiliarios bajo modelos de negocio de alta rentabilidad por seccionamiento de habitaciones.</li>
+                            <li>Coordinación técnica y supervisión directa de obras de remodelación y ampliación utilizando **sistemas prefabricados de construcción ligera (Tablaroca y sistema Covitec de Unicel con y sin estructura)**.</li>
+                            <li>Control y optimización de presupuestos, cubicación de materiales para obra ligera, y gestión de inventarios para proyectos constructivos de reconfiguración espacial.</li>
+                            <li>Liderazgo y supervisión de equipos de contratistas, instaladores y personal administrativo para asegurar los tiempos de entrega y el control de calidad en acabados.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">Director de Estrategia Comercial & Desarrollo B2B</div>
+                        <div class="job-meta">Consultoría Independiente | 2024 – Presente</div>
+                        <ul class="job-bullets">
+                            <li>Identificación de nichos de negocio y prospección inteligente de clientes clave (constructoras, arquitectos y desarrolladores inmobiliarios) en el Bajío.</li>
+                            <li>Estructuración de alianzas comerciales duraderas y diseño de estrategias de venta consultiva para insumos y acabados de gama media y alta.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="sidebar">
+                <section>
+                    <h2>Habilidades Clave</h2>
+                    <div class="skills-badge tech">Manejo de ERP (SAP)</div>
+                    <div class="skills-badge tech">Retail One / Facturación</div>
+                    <div class="skills-badge tech">Control de Inventarios</div>
+                    <div class="skills-badge">Sistemas Tablaroca</div>
+                    <div class="skills-badge">Estructuras Covitec</div>
+                    <div class="skills-badge">Administración de Personal</div>
+                    <div class="skills-badge">Ventas de Mostrador</div>
+                    <div class="skills-badge">Lectura de Planos</div>
+                </section>
+
+                <section>
+                    <h2>Educación</h2>
+                    <p><strong>Licenciatura en Artes Visuales</strong><br>Universidad de las Artes, Ags.<br><small>Especialización en volumetría espacial y balance estructural.</small></p>
+                </section>
+
+                <a href="https://wa.me/524464044521" class="cta-btn" target="_blank">Contactar por WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="industrial-bar" style="margin-top: 50px;"></div>
+
+</body>
+</html>
 
